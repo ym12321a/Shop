@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <include layout="@layout/header_news" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_news_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="德国柏林自由大学教授讲座预告"
+                android:textColor="#2F4F4F"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                    android:id="@+id/tv_news_author"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:text="作者: 小菜"
+                    android:textColor="#FF8C00"
+                    android:textSize="12sp" />
+            
+            <TextView
+                    android:id="@+id/tv_news_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
+                    android:text="发布日期 : 2014-5-3"
+                    android:textColor="#FF8C00"
+                    android:textSize="12sp" />
+            
+            <TextView
+                android:id="@+id/tv_news_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:lineSpacingExtra="10dp"
+                android:padding="10dp"
+                android:text="
+讲座教授：德国柏林自由大学教授   朴圣祚Park sung-jo
+\n
+\n讲座信息：
+\n
+\n   题目： Lifestyle and lifestyle industries in globalization
+\n　　　      全球化背景下的生活方式和生活方式产业
+\n  时间：  2014年4月28日10：00 
+\n 地点：   大学生活动中心 博学堂
+\n
+\n  题目： Samsung&apos;s globalization strategy
+\n　　　    三星的全球化战略 
+\n  时间：  2014年4月28日14：00 
+\n  地点： 大学生活动中心 博学堂
+\n 
+\n承办单位：国际交流与合作处  学工部
+\n
+\n教授简介：
+\n     -1964-1968年，德国萨尔大学，发展研究院辅助研究员
+\n     -1966-1967年，联合国湄公河计划专家，研究泰国区域发展
+\n     -1975-1977年，波鸿鲁尔大学，东亚研究院副院长、院长
+\n     -自1978年担任柏林自由大学，东亚研究学院东亚经济系及政治科学学院全职教授
+\n     -1993-2005：中国延吉市延边大学科学技术学院副校长主管外事
+\n     -2002-2004：贝尔格拉德美佳特莱德应用科技大学校长
+\n     -1989-1991：韩国当代欧洲研究协会创始人和会长
+\n     -1982-1990：欧亚管理协会创始人、会长和董事会成员
+\n     -1994-2001：世界高校联盟发起人和执行秘书长
+\n
+\n获奖情况：
+\n     2003年，荣获美佳特莱德大学经济学荣誉博士
+\n     2005年，荣获韩国广播公司（KBS）授予的人文社会类韩侨奖
+\n     2014年，荣获德国总统授予的联邦十字勋章"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.stone.shop"
+    android:versionCode="2"
+    android:versionName="Beta 1.5.8" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+	<uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+	<uses-permission android:name="android.permission.READ_LOGS"/>
+	<uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_app"
+        android:label="@string/app_name"
+        android:theme="@style/NoTitleBarTheme" >
+        
+        <activity
+            android:name="com.stone.shop.view.LoginActicity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.stone.shop.view.RegisterActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.stone.shop.view.BaseActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.stone.shop.view.ShopActivity"
+            android:label="@string/app_name"  >
+        </activity>
+        <activity
+            android:name="com.stone.shop.view.ShopAllActivity"
+            android:label="@string/app_name"  >
+        </activity>
+        <activity
+            android:name="com.stone.shop.view.ShopItemActivity"
+            android:label="@string/app_name"  >
+        </activity>
+        <activity
+            android:name="com.stone.shop.view.HomeActivity"
+            android:label="@string/app_name"   >
+        </activity>
+        <activity
+            android:name="com.stone.shop.view.CarActivity"
+            android:label="@string/app_name"  >
+        </activity>
+        <activity
+            android:name="com.stone.shop.view.MineActivity"
+            android:label="@string/app_name"  >
+        </activity>
+        <activity
+            android:name="com.stone.shop.view.NewsActivity"
+            android:label="@string/app_name"  >
+        </activity>
+        <activity
+            android:name="com.stone.shop.view.AboutActivity"
+            android:label="@string/app_name"  >
+        </activity>
+    </application>
+
+</manifest>

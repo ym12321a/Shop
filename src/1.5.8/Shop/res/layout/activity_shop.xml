@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <include layout="@layout/header_shop" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="5dp"
+        android:scrollbarSize="0.5dp"
+        android:overScrollMode="ifContentScrolls"
+        android:orientation="vertical" >
+
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="80dp"
+            android:orientation="vertical">
+            
+            <!-- 校园通 -->
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="学习小菜"
+                    android:textColor="#dd3CB371"
+                    android:textSize="14sp"
+                    android:typeface="monospace" />
+                
+                <com.stone.ui.MyGridView
+                    android:id="@+id/gv_school_class"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:columnWidth="80dp"
+                    android:horizontalSpacing="1dp"
+                    android:verticalSpacing="1dp"
+                    android:gravity="center"
+                    android:minHeight="90dp"
+                    android:numColumns="auto_fit"
+                    android:stretchMode="columnWidth" >
+                </com.stone.ui.MyGridView>
+            </LinearLayout>
+
+            <!-- 美食 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="吃饭小菜"
+                    android:textColor="#dd3CB371"
+                    android:textSize="14sp"
+                    android:typeface="monospace" />
+                
+                <com.stone.ui.MyGridView
+                    android:id="@+id/gv_food_class"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:columnWidth="80dp"
+                    android:horizontalSpacing="1dp"
+                    android:verticalSpacing="1dp"
+                    android:gravity="center"
+                    android:minHeight="90dp"
+                    android:numColumns="auto_fit"
+                    android:stretchMode="columnWidth" >
+                </com.stone.ui.MyGridView>
+            </LinearLayout>
+
+            <!-- 礼物 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="购物小菜"
+                    android:textColor="#dd3CB371"
+                    android:textSize="14sp"
+                    android:typeface="monospace" />
+                
+                <com.stone.ui.MyGridView
+                    android:id="@+id/gv_gift_class"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:columnWidth="80dp"
+                    android:horizontalSpacing="1dp"
+                    android:verticalSpacing="1dp"
+                    android:gravity="center"
+                    android:minHeight="90dp"
+                    android:numColumns="auto_fit"
+                    android:stretchMode="columnWidth" >
+                </com.stone.ui.MyGridView>
+            </LinearLayout>
+
+            <!-- 出行 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="5dp"
+                    android:text="疯狂小菜"
+                    android:textColor="#dd3CB371"
+                    android:textSize="14sp"
+                    android:typeface="monospace" />
+                
+                <com.stone.ui.MyGridView
+                    android:id="@+id/gv_out_class"
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:columnWidth="80dp"
+                    android:horizontalSpacing="1dp"
+                    android:verticalSpacing="1dp"
+                    android:gravity="center"
+                    android:minHeight="90dp"
+                    android:numColumns="auto_fit"
+                    android:stretchMode="columnWidth" >
+                </com.stone.ui.MyGridView>
+            </LinearLayout>
+            
+            
+            
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
