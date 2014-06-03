@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.stone.shop"
+    android:versionCode="2"
+    android:versionName="Beta 1.5.8" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_app"
+        android:label="@string/app_name"
+        android:theme="@style/NoTitleBarTheme" >
+        <!-- ********************************QQ登陆配置*********************************** -->
+        <!-- 
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="tencent101080318" />
+            </intent-filter>
+        </activity>   -->
+        <!-- ********************************QQ登陆配置*********************************** -->
+       	<activity
+            android:name="com.stone.shop.view.LoginActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.stone.shop.view.BaseActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.stone.shop.view.RegisterActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.stone.shop.view.ShopActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.stone.shop.view.ShopAllActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.stone.shop.view.ShopItemActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.stone.shop.view.OrderActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.stone.shop.view.OrderInfoActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.stone.shop.view.HomeActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.stone.shop.view.WsqActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.stone.shop.view.AwardActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.stone.shop.view.MineActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.stone.shop.view.MineInfoActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.stone.shop.view.MineInfoEditActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.stone.shop.view.MineSoftActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.stone.shop.view.FeedBackActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.stone.shop.view.old.OldMineActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.stone.shop.view.NewsActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.stone.shop.view.AboutActivity"
+            android:label="@string/app_name" >
+        </activity>
+
+        <!-- 教学类 -->
+        <activity
+            android:name="com.stone.shop.view.BXTActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.stone.shop.view.BXTNewsActivity"
+            android:label="@string/app_name" >
+        </activity>
+    </application>
+
+</manifest>
